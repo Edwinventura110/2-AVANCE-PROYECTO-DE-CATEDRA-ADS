@@ -1,0 +1,48 @@
+.accordion-menu {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.panel a {
+  display: block;
+  padding: 12px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel.show {
+  display: block;
+}
